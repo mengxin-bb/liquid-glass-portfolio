@@ -1,0 +1,4 @@
+interface:
+  display_name: "Liquid Glass Portfolio"
+  short_description: "Refine a quiet liquid-glass personal portfolio"
+  default_prompt: "Apply the restrained liquid-glass portfolio style while preserving the existing structure, routes, data, and interactions."
