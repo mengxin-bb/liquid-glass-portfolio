@@ -22,18 +22,23 @@ Use this skill when building or refining a personal portfolio, project case stud
 
 ## Visual direction
 
+- Apply the shared style baseline by default: translucent glass surfaces, a clear replaceable background, compact spacing, readable larger type, and restrained decoration.
 - Use a full-bleed, responsive background image with `object-fit: cover`; keep the source easy to replace from the project's data file.
 - Build surfaces from translucent color, `backdrop-filter`/`-webkit-backdrop-filter`, thin light borders, and restrained shadows. Keep the background visible through the surface; avoid opaque white cards, large gradients, neon glow, and excessive decoration.
 - Prefer a quiet palette: mist blue, cool gray, pale green, white, and small amounts of pale pink. Text must remain dark and readable over the image.
 - Centralize opacity, blur, border, shadow, radius, spacing, and focus variables in one stylesheet. Provide a solid fallback when backdrop blur is unavailable.
 - Keep cards moderately rounded and interactions subtle: small lift, opacity, or border changes. Respect `prefers-reduced-motion` for page transitions, hover motion, and decorative animation.
 - Use a practical type scale: section titles and key numbers should be clearly larger than metadata; avoid making the main content tiny while leaving oversized blank space around it.
+- Start with larger defaults and verify them at the actual two-column width, not only in a full-screen hero: body text 15–16px, supporting information 12–14px, and card titles 20–26px. Increase text when readability is uncertain instead of waiting for a request to enlarge it.
 
 ## Typography and content
 
 - Treat provided font screenshots as visual references, not font files. Do not claim an exact font match unless a licensed `.ttf`/`.woff2` file is available.
 - Apply decorative handwritten or playful Chinese typography only to explicitly selected identity labels such as the person's name or a portfolio heading. Restore ordinary interface typography for navigation, buttons, descriptions, metadata, and body copy when requested.
 - Do not invent personal experience, achievements, metrics, quotes, links, or certificates. Keep missing content hidden or in a clear empty state.
+- When a project has no real screenshots, use a content-first card with project summary, responsibilities, results, tools, and a details entry point. Do not create illustrative image placeholders. Add an image area only when the user supplies images or explicitly asks for visuals.
+- Avoid duplicate entry points and repeated content. If navigation or a Hero button already enters the portfolio, do not add another equivalent entry card. Do not repeat a complete project history across a personal home page and portfolio route.
+- Do not add bonus modules such as methodology, job-search highlights, life reflections, contact banners, or English subtitles unless the user requests them and provides an appropriate content basis.
 - Keep supporting micro-labels sparse. Remove redundant English eyebrow labels, breadcrumbs, footer slogans, contact banners, and explanatory subtitles when the user asks for a cleaner page.
 - Avoid AI-template signals: do not add labels such as `01 · CONTEXT`, `02 / PROCESS`, `SELECTED WORKS`, `LET'S CONNECT`, or similar number-plus-English ornament unless the user explicitly requests them.
 - When a section needs numbering, show the number alone (for example `01`) and make it visibly larger; never pair it with a decorative English noun.
